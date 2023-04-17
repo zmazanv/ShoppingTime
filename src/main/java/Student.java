@@ -33,7 +33,7 @@ public class Student extends Customer {
                 "\tStudent Identification Number: " + this.studentID + ",\n" +
                 "\tProducts:\n\t" + Arrays.toString(this.getProducts()) + ",\n" +
                 "\tSize: " + this.getSize() + ",\n" +
-                "\tDiscount Percentage: " + (this.DISCOUNT * 100) + "%\n" +
+                "\tDiscount Percentage: " + Math.round(this.DISCOUNT * 100) + "%\n" +
                 '}';
     }
 

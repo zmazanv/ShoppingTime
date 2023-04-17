@@ -39,7 +39,7 @@ public class Product {
     public String toString() {
         return "Product: {\n" +
                 "\tDescription: " + this.description + ",\n" +
-                "\tPrice: " + this.price + ",\n" +
+                "\tPrice: $" + this.price + ",\n" +
                 "\tSize: " + this.size + '\n' +
                 '}';
     }

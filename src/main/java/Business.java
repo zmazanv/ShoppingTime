@@ -38,7 +38,7 @@ public class Business implements Discountable {
         return "Business: {\n" +
                 "\tAddress: " + this.address + ",\n" +
                 "\tProduct: " + this.product + ",\n" +
-                "\tDiscount Percentage: " + (this.DISCOUNT * 100) + "%\n" +
+                "\tDiscount Percentage: " + Math.round(this.DISCOUNT * 100) + "%\n" +
                 '}';
     }
 
