@@ -56,6 +56,8 @@ public class Main {
         ShopApp.printPersonName(david);
         System.out.println("---- calculateTotal(Product[]) --------------------------------------------");
         System.out.println(ShopApp.calculateTotal(new Product[] {windbreaker, shirt, shoe, pants}));
+        System.out.println("---- isAFit() -------------------------------------------------------------");
+        System.out.println(ShopApp.isAFit(david, pants));
         System.out.println("---- printEveryDiscountAvailableForAProduct(Discountable[], Product) -----");
         ShopApp.printEveryDiscountAvailableForAProduct(new Discountable[] {nike, robert, david}, shoe);
         System.out.println("---------------------------------------------------------------------------");

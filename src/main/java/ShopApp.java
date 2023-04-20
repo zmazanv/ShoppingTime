@@ -12,7 +12,7 @@ public class ShopApp {
         return total;
     }
     public static boolean isAFit(Customer customer, Product product) {
-        return false;
+        return customer.getSize() == product.getSize();
     }
 String hello = String.format("I have %,.2f bugs to fix.", 476578.09876);
     public static void printEveryDiscountAvailableForAProduct(Discountable[] discountables, Product product) {
