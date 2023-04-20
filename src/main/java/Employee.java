@@ -3,7 +3,7 @@ import java.util.Arrays;
 public abstract class Employee extends Customer {
 
     // Instance Constants
-    private final double DISCOUNT = 0.1;
+    protected final double DISCOUNT = 0.1;
 
     // Instance Variables
     final private long employeeID;

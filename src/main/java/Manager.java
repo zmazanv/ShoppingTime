@@ -4,7 +4,7 @@ public class Manager extends Employee {
 
 
     // Instance Constants
-    final private double MANAGERIALDISCOUNT = super.getDISCOUNT() + 0.05;
+    final private double DISCOUNT = super.DISCOUNT + 0.05;
 
     // Constructors
     public Manager (String name, Product[] products, Size size) {
@@ -19,7 +19,7 @@ public class Manager extends Employee {
                 "\tEmployee Identification Number: " + this.getEmployeeID() + ",\n" +
                 "\tProducts:\n\t" + Arrays.toString(this.getProducts()) + ",\n" +
                 "\tSize: " + this.getSize() + ",\n" +
-                "\tDiscount Percentage: " + Math.round(this.MANAGERIALDISCOUNT * 100) + "%\n" +
+                "\tDiscount Percentage: " + Math.round(this.DISCOUNT * 100) + "%\n" +
                 '}';
     }
 
@@ -28,6 +28,6 @@ public class Manager extends Employee {
 
     @Override
     public double calculateDiscount(Product product) {
-        return (product.getPrice() * this.MANAGERIALDISCOUNT);
+        return (product.getPrice() * this.DISCOUNT);
     }
 }
